@@ -14,6 +14,7 @@
 		06613A7521C915AD007DF032 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06613A7321C915AD007DF032 /* LaunchScreen.storyboard */; };
 		06613A8021C915AD007DF032 /* WithoutXCodeBuildSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06613A7F21C915AD007DF032 /* WithoutXCodeBuildSystemTests.swift */; };
 		06613A8B21C915AD007DF032 /* WithoutXCodeBuildSystemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06613A8A21C915AD007DF032 /* WithoutXCodeBuildSystemUITests.swift */; };
+		06613A9921C9163A007DF032 /* build.bash in Resources */ = {isa = PBXBuildFile; fileRef = 06613A9821C9163A007DF032 /* build.bash */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		06613A8621C915AD007DF032 /* WithoutXCodeBuildSystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WithoutXCodeBuildSystemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06613A8A21C915AD007DF032 /* WithoutXCodeBuildSystemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithoutXCodeBuildSystemUITests.swift; sourceTree = "<group>"; };
 		06613A8C21C915AD007DF032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06613A9821C9163A007DF032 /* build.bash */ = {isa = PBXFileReference; lastKnownFileType = text; path = build.bash; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		06613A5E21C915AC007DF032 = {
 			isa = PBXGroup;
 			children = (
+				06613A9821C9163A007DF032 /* build.bash */,
 				06613A6921C915AC007DF032 /* WithoutXCodeBuildSystem */,
 				06613A7E21C915AD007DF032 /* WithoutXCodeBuildSystemTests */,
 				06613A8921C915AD007DF032 /* WithoutXCodeBuildSystemUITests */,
@@ -231,6 +234,7 @@
 			files = (
 				06613A7521C915AD007DF032 /* LaunchScreen.storyboard in Resources */,
 				06613A7221C915AD007DF032 /* Assets.xcassets in Resources */,
+				06613A9921C9163A007DF032 /* build.bash in Resources */,
 				06613A7021C915AC007DF032 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
