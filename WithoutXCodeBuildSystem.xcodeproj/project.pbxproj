@@ -15,6 +15,7 @@
 		06613A8021C915AD007DF032 /* WithoutXCodeBuildSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06613A7F21C915AD007DF032 /* WithoutXCodeBuildSystemTests.swift */; };
 		06613A8B21C915AD007DF032 /* WithoutXCodeBuildSystemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06613A8A21C915AD007DF032 /* WithoutXCodeBuildSystemUITests.swift */; };
 		06613A9921C9163A007DF032 /* build.bash in Resources */ = {isa = PBXBuildFile; fileRef = 06613A9821C9163A007DF032 /* build.bash */; };
+		06613A9B21C923BC007DF032 /* unused.rb in Resources */ = {isa = PBXBuildFile; fileRef = 06613A9A21C923BC007DF032 /* unused.rb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		06613A8A21C915AD007DF032 /* WithoutXCodeBuildSystemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithoutXCodeBuildSystemUITests.swift; sourceTree = "<group>"; };
 		06613A8C21C915AD007DF032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06613A9821C9163A007DF032 /* build.bash */ = {isa = PBXFileReference; lastKnownFileType = text; path = build.bash; sourceTree = "<group>"; };
+		06613A9A21C923BC007DF032 /* unused.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = unused.rb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		06613A5E21C915AC007DF032 = {
 			isa = PBXGroup;
 			children = (
+				06613A9A21C923BC007DF032 /* unused.rb */,
 				06613A9821C9163A007DF032 /* build.bash */,
 				06613A6921C915AC007DF032 /* WithoutXCodeBuildSystem */,
 				06613A7E21C915AD007DF032 /* WithoutXCodeBuildSystemTests */,
@@ -138,6 +141,7 @@
 				06613A6321C915AC007DF032 /* Sources */,
 				06613A6421C915AC007DF032 /* Frameworks */,
 				06613A6521C915AC007DF032 /* Resources */,
+				06613A9C21C92455007DF032 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -236,6 +240,7 @@
 				06613A7221C915AD007DF032 /* Assets.xcassets in Resources */,
 				06613A9921C9163A007DF032 /* build.bash in Resources */,
 				06613A7021C915AC007DF032 /* Main.storyboard in Resources */,
+				06613A9B21C923BC007DF032 /* unused.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +259,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06613A9C21C92455007DF032 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "file=\"unused.rb\"\nif [ -f \"$file\" ]\nthen\necho \"$file found.\"\nruby unused.rb xcode\nelse\necho \"unused.rb doesn't exist\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		06613A6321C915AC007DF032 /* Sources */ = {
